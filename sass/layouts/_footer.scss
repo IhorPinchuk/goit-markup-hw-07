@@ -44,17 +44,18 @@
 
 .address-footer {
   color: var(--address-footer-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-footer {
   color: var(--contact-footer-color);
-}
-
-.address-footer:hover,
-.address-footer:focus,
-.contact-footer:hover,
-.contact-footer:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-soc {
@@ -90,20 +91,18 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color var(--transition-duration-cubic);
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
-  fill: var(--address-footer-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-soc-icon {
   fill: var(--address-footer-color);
+  .footer-soc-link:hover &,
+  .footer-soc-link:focus & {
+    fill: var(--address-footer-color);
+  }
 }
 
 .footer-caption-text {
@@ -134,10 +133,9 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-}
-
-.caption-input:focus {
-  border-color: rgba(255, 255, 255, 0.3);
+  &:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .caption-button {
@@ -158,11 +156,10 @@
   justify-content: center;
 
   transition: background-color var(--transition-duration-cubic);
-}
-
-.caption-button:hover,
-.caption-button:focus {
-  background-color: var(--button-active-color);
+  &:hover,
+  &:focus {
+    background-color: var(--button-active-color);
+  }
 }
 
 .caption-icon {

@@ -1,52 +1,53 @@
 .hero {
-    margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
-    background-color: var(--bg-hero-color);
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--bg-hero-color);
 }
 
 .overlya {
-    width: 1600px;
-    height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/Hero.jpg);
+  width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Hero.jpg);
 }
 
 .hero-title {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3636;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--title-hero-color);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-hero-color);
 }
 
 /* Button */
 
 .hero-button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    min-width: 216px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--button-text-color);
-    border: none;
-    border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 216px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 4px;
 
-    transition: background-color var(--transition-duration-cubic);
-}
-
-.hero-button:hover,
-.hero-button:focus {
+  transition: background-color var(--transition-duration-cubic);
+  &:hover,
+  &:focus {
     background-color: var(--button-active-color);
+  }
 }
