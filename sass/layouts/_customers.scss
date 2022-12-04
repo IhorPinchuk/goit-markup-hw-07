@@ -3,18 +3,18 @@
   padding-bottom: 94px;
 }
 
-.customers-list {
+.customers__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.customers-item {
+.customers__item {
   width: 170px;
   height: 92px;
 }
 
-.customers-link {
+.customers__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -30,12 +30,12 @@
   }
 }
 
-.customers-logo {
+.customers__logo {
   fill: var(--customers-logo-color);
 
   transition: fill var(--transition-duration-cubic);
-  .customers-link:hover &,
-  .customers-link:focus & {
+  .customers__link:hover &,
+  .customers__link:focus & {
     fill: var(--customers-icon-hover);
   }
 }

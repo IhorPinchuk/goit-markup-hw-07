@@ -2,20 +2,20 @@
   padding-bottom: 94px;
 }
 
-.work .list {
+.work__list {
   display: flex;
   gap: 30px;
 }
 
-.work-item {
+.work__item {
   width: calc((100% - 60px) / 3);
 }
 
-.work-thumb {
+.work__thumb {
   position: relative;
 }
 
-.work-title-thumb {
+.work__thumb-title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -27,7 +27,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-title {
+.work__title-thumb {
   font-size: 14px;
   line-height: 1.1721;
   text-transform: uppercase;

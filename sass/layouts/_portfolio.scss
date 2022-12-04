@@ -4,14 +4,14 @@
   background-color: var(--bg-portfolio-color);
 }
 
-.portfolio-nav {
+.portfolio__nav {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
   gap: 8px;
 }
 
-.portfolio-nav .button {
+.portfolio__button {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -20,7 +20,6 @@
   background-color: var(--additional-bg-color);
   color: var(--title-text-color);
   border: none;
-  cursor: pointer;
   border-radius: 4px;
 
   transition: color var(--transition-duration-cubic),
@@ -34,20 +33,21 @@
   }
 }
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-item {
+.portfolio__item {
   width: calc((100% - 60px) / 3);
   background-color: var(--portfolio-item-bg-color);
 }
 
-.portfolio-item .link {
+.portfolio__link {
   position: relative;
   display: block;
+  text-decoration: none;
   transition: box-shadow var(--transition-duration-cubic);
   &:hover,
   &:focus {
@@ -55,12 +55,12 @@
   }
 }
 
-.portfolio-top-wrap {
+.portfolio__top-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-top-text {
+.portfolio__top-text {
   position: absolute;
   top: 0;
   font-size: 18px;
@@ -74,14 +74,14 @@
   transition: transform var(--transition-duration-cubic);
   background-color: var(--bg-portfolio-card);
   color: var(--portfolio-card-color);
-  .portfolio-item .link:hover &,
-  .portfolio-item .link:focus & {
+  .portfolio__link:hover &,
+  .portfolio__link:focus & {
     transform: translateY(0);
   }
   /* overflow: auto; */
 }
 
-.portfolio-card {
+.portfolio__card {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -91,7 +91,7 @@
   border-left: 1px solid var(--border-portfolio-color);
 }
 
-.portfolio-list .title {
+.portfolio__card-title {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
@@ -99,12 +99,8 @@
   color: var(--title-text-color);
 }
 
-.portfolio-list .text {
+.portfolio__card-text {
   font-size: 16px;
   line-height: 1.875;
   color: var(--primary-text-color);
-}
-
-.portfolio-list .link {
-  text-decoration: none;
 }

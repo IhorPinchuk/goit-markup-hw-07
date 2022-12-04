@@ -1,17 +1,19 @@
 @import './utils/vars';
+@import './utils/visually-hidden';
 
 @import './base/reset';
 @import './base/common';
 
 @import './components/container';
+@import './components/logo';
+@import './components/section-title';
+@import './components/btn';
+@import './components/soc';
+@import './components/address';
+@import './components/modal';
 
 @import './layouts/header';
 @import './layouts/hero';
-
-@import './components/section-title';
-
-@import './utils/visually-hidden';
-
 @import './layouts/feature';
 @import './layouts/work';
 @import './layouts/team';
@@ -19,4 +21,3 @@
 @import './layouts/footer';
 @import './layouts/portfolio';
 
-@import './components/modal';
