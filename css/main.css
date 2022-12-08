@@ -424,11 +424,11 @@ body {
   color: var(--accent-color);
 }
 
-.menu__link.current {
+.menu__link--current {
   position: relative;
   color: var(--accent-color);
 }
-.menu__link.current:after {
+.menu__link--current:after {
   content: "";
   position: absolute;
   left: 0;

@@ -53,7 +53,7 @@
   }
 }
 
-.menu__link.current {
+.menu__link--current {
   position: relative;
   color: var(--accent-color);
   &:after {
